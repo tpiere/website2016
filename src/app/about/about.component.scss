@@ -1,0 +1,20 @@
+@import "../app.component";
+/*About page*/
+.aboutWrapper{
+    @include clearfix;
+    color:$mie-dark-blue;
+    padding-bottom:20px;}
+.portrait {
+    float: right;
+    margin-left: 1em;
+    width: 50%;
+    max-width: 500px;
+}
+.aboutText:first-letter,.technologyIntro:first-letter {
+    /* font-weight: bold; */
+    font-size: 1.25em;
+}
+.md-icon{
+    font-size:1em;
+    vertical-align: middle;
+}

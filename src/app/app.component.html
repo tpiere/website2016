@@ -16,10 +16,10 @@
     <md-icon>build</md-icon>
     See what I've worked on
   </a>
-  <button md-menu-item>
-      <md-icon>person</md-icon> 
-      Learn more about me
-    </button>
+  <a [routerLink]="['/about']" md-menu-item>
+    <md-icon>person</md-icon>
+    Learn more about me
+  </a>
 </md-menu>
 <div class="container">
   <h1><a [routerLink]="['/home']">Tom Piere <md-icon class="headHomeIcon">home</md-icon> 

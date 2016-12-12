@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HomeComponent }   from './home/home.component';
 import { ProjectsComponent }   from './projects/projects.component';
+import { AboutComponent }   from './about/about.component';
 
 
 import { AppRoutingModule }   from './app.routing.module';
@@ -14,7 +15,8 @@ import { AppRoutingModule }   from './app.routing.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
