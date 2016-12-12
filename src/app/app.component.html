@@ -1,32 +1,6 @@
-<!-- menu opens when trigger button is clicked -->
-<button md-mini-fab color="primary" 
-  [md-menu-trigger-for]="menu"
-  class="menu-trigger">
-   <md-icon>more_vert</md-icon>
-</button>
 
-<md-menu x-position="before" #menu="mdMenu">
-   <a [routerLink]="['/home']"  md-menu-item>
-    <md-icon>home</md-icon>
-    Home
-  </a>
-  <a href="assets/TomPiere.docx" md-menu-item>
-    <md-icon>file_download</md-icon>
-    Download my resume
-  </a>
-  <a href="mailto:tpiere@gmail.com" md-menu-item>
-    <md-icon>email</md-icon>
-    Email me
-  </a>
-  <a [routerLink]="['/projects']" md-menu-item>
-    <md-icon>build</md-icon>
-    See what I've worked on
-  </a>
-  <a [routerLink]="['/about']" md-menu-item>
-    <md-icon>person</md-icon>
-    Learn more about me
-  </a>
-</md-menu>
+<menu></menu>
+
 <div class="container">
   <h1><a [routerLink]="['/home']">Tom Piere <md-icon class="headHomeIcon">home</md-icon> 
   <span class="subHeading">web developer</span></a></h1>
