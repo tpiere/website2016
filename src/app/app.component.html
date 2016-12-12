@@ -1,7 +1,29 @@
-<h1>
-  {{title}}
-</h1>
-
-<button md-fab>
-    <md-icon class="md-24">add</md-icon>
+<!-- menu opens when trigger button is clicked -->
+<button md-icon-button [md-menu-trigger-for]="menu">
+   <md-icon>more_vert</md-icon>
 </button>
+
+<md-menu #menu="mdMenu">
+  <a href="/TomPiere.docx" md-menu-item>
+    <md-icon>file_download</md-icon>
+    Download my resume
+  </a>
+  <a href="mailto:tpiere@gmail.com" md-menu-item>
+    <md-icon>email</md-icon>
+    Email me
+  </a>
+  <a [routerLink]="['/projects']" md-menu-item>
+    <md-icon>build</md-icon>
+    See what I've worked on
+  </a>
+  <button md-menu-item>
+      <md-icon>person</md-icon> 
+      Learn more about me
+    </button>
+</md-menu>
+<div class="container">
+  <h1><a [routerLink]="['/home']">Tom Piere <md-icon class="headHomeIcon">home</md-icon> 
+  <span class="subHeading">web developer</span></a></h1>
+
+  <router-outlet></router-outlet>
+</div>
