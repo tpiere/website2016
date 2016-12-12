@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico",
+        "favicon-gears.ico",
         "images"
       ],
       "index": "index.html",
