@@ -1,9 +1,15 @@
 <!-- menu opens when trigger button is clicked -->
-<button md-icon-button [md-menu-trigger-for]="menu">
+<button md-mini-fab color="primary" 
+  [md-menu-trigger-for]="menu"
+  class="menu-trigger">
    <md-icon>more_vert</md-icon>
 </button>
 
 <md-menu #menu="mdMenu">
+   <a [routerLink]="['/home']"  md-menu-item>
+    <md-icon>home</md-icon>
+    Home
+  </a>
   <a href="assets/TomPiere.docx" md-menu-item>
     <md-icon>file_download</md-icon>
     Download my resume

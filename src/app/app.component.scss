@@ -71,32 +71,14 @@ i {
   margin-right:10px;
 }
 
-/*Home page buttons*/
-.btn.btn-primary.btn-lg {
-    width: 100%;
-    text-align: left;
-    margin: 0 0 5px 0;
-    color:$mie-beige;
-}
-
-.projectList{
-  padding: 0 15px;
-  color:$mie-dark-blue;
+.menu-trigger{
+     position:absolute;
+     top:5px;
+     left:5px;
 }
 
 
-/*About page*/
-.aboutWrapper{color:$mie-dark-blue;}
-.portrait {
-    float: right;
-    margin-left: 1em;
-    width: 50%;
-    max-width: 500px;
-}
-.aboutText:first-letter,.technologyIntro:first-letter {
-    /* font-weight: bold; */
-    font-size: 1.25em;
-}
+
 
 /*Technologies Page*/
 .technologyIntro{margin:1.5em 0;}
