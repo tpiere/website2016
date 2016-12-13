@@ -8,6 +8,7 @@ import { HomeComponent }   from './home/home.component';
 import { ProjectsComponent }   from './projects/projects.component';
 import { AboutComponent }   from './about/about.component';
 import { MenuComponent }   from './menu/menu.component';
+import { MenuMediatorService } from './services/menu.mediator.service';
 
 
 import { AppRoutingModule }   from './app.routing.module';

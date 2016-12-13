@@ -1,9 +1,10 @@
+<div>
+  <menu *ngIf="showMenu"></menu>
 
-<menu></menu>
-
-<div class="container">
-  <h1><a [routerLink]="['/home']">Tom Piere <md-icon class="headHomeIcon">home</md-icon> 
+  <div class="container">
+    <h1><a [routerLink]="['/home']">Tom Piere <md-icon class="headHomeIcon">home</md-icon> 
   <span class="subHeading">web developer</span></a></h1>
 
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+  </div>
 </div>
