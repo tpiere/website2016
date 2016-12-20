@@ -1,0 +1,14 @@
+
+<!--<form name="searchForm" >-->
+    <input #searchBox
+           type="text"  
+           name="searchBox" 
+           (keyup)="searchFor(searchBox.value)"
+    />
+<!--</form>-->
+
+<ul>
+    <li *ngFor="let skill of skills | async" >
+        {{skill.name}} - {{skill.proficiency}}
+    </li>
+<ul>
